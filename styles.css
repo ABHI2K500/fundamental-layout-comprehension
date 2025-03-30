@@ -8,30 +8,35 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header and Navigation */
-header {
-    background: #333;
-    color: white;
-    padding: 15px;
+/* Logo */
+.logo {
     text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
 }
-nav {
+nav ul {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
 }
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 10px;
 }
 
 /* Layout */
-.container {
+main.grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -46,8 +51,8 @@ aside {
     padding: 15px;
 }
 
-/* Image Styling */
-.content img {
+/* Floating Image */
+article .feature {
     float: left;
     margin-right: 15px;
     max-width: 40%;
@@ -55,22 +60,15 @@ aside {
 }
 
 /* Photo Gallery */
-.photo-gallery {
+.photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
+    list-style: none;
+    padding: 0;
 }
-.photo-gallery img {
+.photos li img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }
